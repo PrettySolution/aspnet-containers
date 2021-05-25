@@ -1,0 +1,8 @@
+version: '3.5'
+services:
+  qisim:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: password
+      MSSQL_PID: Developer
