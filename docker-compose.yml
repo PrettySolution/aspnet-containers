@@ -4,7 +4,7 @@ services:
     image: mcr.microsoft.com/mssql/server
     environment:
       ACCEPT_EULA: Y
-      SA_PASSWORD: Password1!
+      SA_PASSWORD: SuperVfSoft1!
       MSSQL_PID: Developer
     ports:
       - 1433:1433
