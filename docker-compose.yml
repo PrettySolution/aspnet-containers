@@ -1,10 +1,22 @@
 version: '3.5'
 services:
-  mssql:
-    image: mcr.microsoft.com/mssql/server
-    environment:
-      ACCEPT_EULA: Y
-      SA_PASSWORD: SuperVfSoft1!
-      MSSQL_PID: Developer
+#  mssql:
+#    image: mcr.microsoft.com/mssql/server
+#    environment:
+#      ACCEPT_EULA: Y
+#      SA_PASSWORD: SuperVfSoft1!
+#      MSSQL_PID: Developer
+#    ports:
+#      - 1434:1433
+
+#  web:
+#    image: nginx
+#    ports:
+#      - 8181:80
+#    volumes:
+#      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+  qisim:
+    build: ./qisim
     ports:
-      - 1433:1433
+      - 8282:80
