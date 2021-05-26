@@ -15,6 +15,7 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-angular
     // https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/v1-v2-upgrade-guide.md
     MsalModule.forRoot(
       {},
