@@ -2,6 +2,8 @@ version: '3.5'
 services:
   mssql:
     image: mcr.microsoft.com/mssql/server
+    volumes:
+      - ./database/backup.bak:/var/opt/mssql/backup/backup.bak
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: SuperVfSoft1!
