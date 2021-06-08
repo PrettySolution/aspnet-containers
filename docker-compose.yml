@@ -2,7 +2,7 @@ version: '3.5'
 services:
   mssql:
     build:
-      ./database
+      ./mssql
     command: /bin/bash ./entrypoint.sh
     environment:
       ACCEPT_EULA: Y
