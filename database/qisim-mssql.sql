@@ -1,6 +1,6 @@
-CREATE DATABASE DemoData;
+CREATE DATABASE qisim;
 GO
-USE DemoData;
+USE qisim;
 GO
 CREATE TABLE Products (ID int, ProductName nvarchar(max));
 GO
